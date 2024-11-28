@@ -287,17 +287,27 @@
         border-color: rgb(255, 101, 166);
     }
 
+    &__checkbox-input:checked+ .filter__color--white::before {
+        border: none;
+    }
+
     &__checkbox-input:checked+.filter__checkbox-label::after {
         content: '';
         background: url(images/mark.svg) no-repeat center;
         border: 1px solid $main-color;
-        filter: drop-shadow(0px 0px 2px #ccc);
+        filter: drop-shadow(0px 0px 1px #ccc);
         background-size: 10px 10px;
-        width: 14px;
-        height: 14px;
+        width: 14.8px;
+        height: 14.8px;
         left: 0;
         top: -1px;
         position: absolute;
+    }
+
+    &__checkbox-input:checked+.filter__color--black::after,
+    &__checkbox-input:checked+.filter__color--blue::after {
+        content: '';
+        filter: invert(100%)
     }
 
     // Тип комнаты

@@ -48,15 +48,18 @@
         height: 40px;
         appearance: none;
         padding-top: 9px;
-        padding-bottom: 11px;
+        padding-bottom: 10px;
         padding-left: 23px;
+        padding-right: 56px;
         min-width: 182px;
+        max-width: max-content;
         font: inherit;
         background-color: transparent;
         color: $main-color;
         background-image: url(images/arrow.svg);
         background-repeat: no-repeat;
         background-position: 90% 50%;
+        outline: none;
     }
 
     &__option {

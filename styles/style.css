@@ -147,6 +147,7 @@ a {
   line-height: 210%;
   text-align: center;
   border: none;
+  outline: none;
 }
 .h-cart__result-box {
   display: flex;
@@ -570,15 +571,19 @@ a {
      -moz-appearance: none;
           appearance: none;
   padding-top: 9px;
-  padding-bottom: 11px;
+  padding-bottom: 10px;
   padding-left: 23px;
+  padding-right: 56px;
   min-width: 182px;
+  max-width: -moz-max-content;
+  max-width: max-content;
   font: inherit;
   background-color: transparent;
   color: rgb(0, 0, 0);
   background-image: url(images/arrow.svg);
   background-repeat: no-repeat;
   background-position: 90% 50%;
+  outline: none;
 }
 .filter-box__option, .filter-box__btn {
   color: rgb(0, 0, 0);
@@ -998,6 +1003,7 @@ a {
   line-height: 210%;
   text-align: center;
   border: none;
+  outline: none;
 }
 .cart .button-box {
   display: flex;

@@ -131,7 +131,7 @@
             width: 200px;
             height: 37px;
             background-color: transparent;
-            transition: all 0.7s;
+            transition: all 1s;
         }
         &__btn:hover {
             border: 1px solid $color-text;
@@ -199,6 +199,19 @@
             font-weight: 500;
         }
 
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05); // Увеличение на 5%
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+        
+
         &__btn {
             display: block;
             margin: 18px auto;
@@ -213,13 +226,15 @@
             width: 290px;
             height: 41px;
             background-color: transparent;
-            transition: all 0.7s;
+            transition: all 1s;
         }
 
         &__btn:hover {
             border: 1px solid $color-text;
             background: $main-color;
             color: $color-text;
+            animation: pulse 1.5s infinite;
+            animation-play-state: running;
         }
 
     }

@@ -12,6 +12,19 @@ body {
 
 a {
   text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+}
+
+input {
+  cursor: pointer;
+}
+
+select {
+  cursor: pointer;
 }
 
 .center {

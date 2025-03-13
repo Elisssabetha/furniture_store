@@ -319,6 +319,7 @@ select {
        column-gap: 32px;
   row-gap: 56px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .product-card {
